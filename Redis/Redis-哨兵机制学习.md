@@ -53,3 +53,14 @@ Redis Sentinel主要执行以下四个任务：
 | PING                            | `Sentinel` 向其他 `Sentinel` 节点发送 `PING` 命令，检查节点的状态 |
 | SENTINEL:is-master-down-by-addr | 和其他 `Sentinel` 协商 **主节点** 的状态，如果 **主节点** 处于 `SDOWN` 状态，则投票自动选出新的 **主节点** |
 
+其实说白了，Sentinel机制的出现，通过了相关的命令，与选举机制，使得整个Redis主从复制架构变得更加可靠稳固。虽然在主从复制的架构下，redis的主从架构还是会受到一定的读性能压力，但后期还可以采取分布式的方案外加均衡负载的方案，使得整个Redis集群架构变得更为高可用、高并发。
+
+> 资料来源：
+>
+> [redis](https://redis.io/documentation)
+>
+> https://www.cnblogs.com/bingshu/p/9776610.html
+
+> 个人思考：
+>
+> 在整个选举机制，联想到了zookpper的选举机制。同时，根据分布式的链条，想起了CAP理论中的相关知识。在整个分布式的方案中，还得具体分析数据与性能的轻重，进而设计出最优的分布式架构。
