@@ -91,4 +91,8 @@ e6bf9d022461        jpress                        "catalina.sh run"        5 day
 >
 > 《Docker技术入门与实践》第三版
 >
-> docker中文社区
+> [docker中文社区](https://www.docker.org.cn/)
+>
+> [镜像仓库](https://c.163.com/hub#/library/repository/info?repoId=2955)
+
+> 个人规划： dockerFile > docker compose(dockerFile升级版一次性启动多个容器)。除了对单机docker的学习，还需要上升到集群或是分布式的层面会更好点。
